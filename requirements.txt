@@ -1,0 +1,16 @@
+# Core data
+pandas>=2.0
+numpy>=1.24
+
+# Postgres driver
+psycopg2-binary>=2.9
+
+# Kaggle CLI (下載 SECOM 用)
+kaggle>=1.6
+
+# 進度條
+tqdm>=4.66
+
+# Week 1 Day 5 之後會用到
+streamlit>=1.30
+plotly>=5.18
