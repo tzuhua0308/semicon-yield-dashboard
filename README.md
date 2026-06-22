@@ -202,9 +202,10 @@ LIMIT 10;
 ## 🗺️ Roadmap
 
 - [x] **Day 1**: Schema + ETL 完成,924K 筆讀值入庫
-- [ ] **Day 2-4**: SQL 進階(Window Function、CTE、Index 優化)
+- [x] **Day 2**: SQL 練習 8 題(GROUP BY → CTE → Window Function)
+- [ ] **Day 3-4**: SQL 效能(EXPLAIN、Index 優化)
 - [ ] **Day 5-6**: Streamlit 良率儀表板
-- [ ] **Day 7**: README、ER Diagram、demo 截圖整理
+- [ ] **Day 7**: README、demo 截圖、整理
 - [ ] **Week 2**: 接續 [semicon-yield-prediction](https://github.com/) — 良率 ML 預測
 
 ---
