@@ -188,14 +188,33 @@ LIMIT 10;
 
 ---
 
+## 📸 Dashboard Demo
+
+Streamlit + Plotly,連 PostgreSQL,3 個互動 tab。執行:`streamlit run dashboard/app.py`
+
+### Tab 1 · 月度良率趨勢
+![Yield Trend](docs/screenshots/01_yield_trend.png)
+> 月度良率折線圖 + 月對月變化(LAG)。**7 月暴跌至 85.96%**,業界稱 Yield Excursion。
+
+### Tab 2 · 感測器健康度
+![Sensor Health](docs/screenshots/02_sensor_health.png)
+> 各製程站平均 NULL 比例(紅色越深越糟)。Etching、CMP 是高風險站。
+
+### Tab 3 · 批號追蹤
+![Lot Tracker](docs/screenshots/03_lot_tracker.png)
+> 互動式查詢:選批號 + 製程站 → 即時撈出該批所有感測器讀值。
+
+---
+
 ## 🛠️ 技術棧
 
 | 層 | 工具 |
 |---|---|
 | 資料庫 | PostgreSQL 16 |
 | ETL | Python 3.13, pandas, numpy, psycopg2 |
+| Dashboard | Streamlit · Plotly Express · 自訂 theme |
 | 資料來源 | Kaggle API |
-| 之後 | Streamlit + Plotly(dashboard), scikit-learn + SHAP(良率預測) |
+| 之後 | scikit-learn + SHAP(良率預測) |
 
 ---
 
@@ -203,9 +222,9 @@ LIMIT 10;
 
 - [x] **Day 1**: Schema + ETL 完成,924K 筆讀值入庫
 - [x] **Day 2**: SQL 練習 8 題(GROUP BY → CTE → Window Function)
-- [ ] **Day 3-4**: SQL 效能(EXPLAIN、Index 優化)
-- [ ] **Day 5-6**: Streamlit 良率儀表板
-- [ ] **Day 7**: README、demo 截圖、整理
+- [x] **Day 3**: Streamlit dashboard(3 互動 tabs + sidebar + theme)
+- [ ] **Day 4-5**: SQL 效能(EXPLAIN、Index)、Dashboard 更多 view
+- [ ] **Day 6-7**: 整理與部署(Streamlit Cloud)
 - [ ] **Week 2**: 接續 [semicon-yield-prediction](https://github.com/) — 良率 ML 預測
 
 ---
